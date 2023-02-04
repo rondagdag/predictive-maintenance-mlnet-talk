@@ -1,0 +1,33 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PredictiveMaintenanceMauiApp"
+             x:Class="PredictiveMaintenanceMauiApp.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="Entry" x:Key="predictEntry">
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="WidthRequest" Value="250"/>
+            </Style>
+
+            <Style TargetType="Label" x:Key="predictLabel">
+                <Setter Property="TextColor" Value="Orange"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="predictButton">
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Orange"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
