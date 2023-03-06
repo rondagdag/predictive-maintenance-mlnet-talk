@@ -41,7 +41,7 @@ namespace PredictiveMaintenanceModel_ConsoleApp1
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"Product ID",outputColumnName:@"Product ID"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"Type",@"Air temperature",@"Process temperature",@"Rotational speed",@"Torque",@"Tool wear",@"Product ID"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"Machine failure",inputColumnName:@"Machine failure"))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastTree(new FastTreeBinaryTrainer.Options(){NumberOfLeaves=4,MinimumExampleCountPerLeaf=23,NumberOfTrees=25,MaximumBinCountPerFeature=112,FeatureFraction=0.80642859338441,LearningRate=0.999999776672986,LabelColumnName=@"Machine failure",FeatureColumnName=@"Features"}),labelColumnName: @"Machine failure"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastForest(new FastForestBinaryTrainer.Options(){NumberOfTrees=12,NumberOfLeaves=4,FeatureFraction=1F,LabelColumnName=@"Machine failure",FeatureColumnName=@"Features"}),labelColumnName:@"Machine failure"))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;

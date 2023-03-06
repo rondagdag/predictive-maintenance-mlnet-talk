@@ -1,0 +1,11 @@
+﻿{
+  "Scenario": "Default",
+  "Type": "TrainingConfig",
+  "Version": 3,
+  "TrainingOption": {
+    "Version": 0,
+    "Type": "DefaultTrainingOption",
+    "TrainingTime": 0,
+    "Seed": 0
+  }
+}
