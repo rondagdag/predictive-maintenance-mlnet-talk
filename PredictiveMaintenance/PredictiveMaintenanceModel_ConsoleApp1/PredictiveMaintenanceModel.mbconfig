@@ -14,7 +14,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Product ID",
@@ -22,7 +22,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Type",
@@ -30,7 +30,7 @@
         "ColumnDataFormat": "String",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Air temperature",
@@ -38,7 +38,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Process temperature",
@@ -46,7 +46,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Rotational speed",
@@ -54,7 +54,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Torque",
@@ -62,7 +62,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Tool wear",
@@ -70,7 +70,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": false,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "Machine failure",
@@ -78,7 +78,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "TWF",
@@ -86,7 +86,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "HDF",
@@ -94,7 +94,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "PWF",
@@ -102,7 +102,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "OSF",
@@ -110,7 +110,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       },
       {
         "ColumnName": "RNF",
@@ -118,7 +118,7 @@
         "ColumnDataFormat": "Single",
         "IsCategorical": true,
         "Type": "Column",
-        "Version": 3
+        "Version": 4
       }
     ]
   },
@@ -127,7 +127,7 @@
     "Version": 1
   },
   "RunHistory": {
-    "Version": 2,
+    "Version": 3,
     "Type": "Result",
     "Trials": [
       {
@@ -707,12 +707,14 @@
       "e12": "MapKeyToValue"
     },
     "Schema": "e0 * e1 * e2 * e3 * e4 * (e5 + e6 + e7 + e8 + e9 + e10 + e11) * e12",
-    "MetricName": "MacroAccuracy"
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": ""
   },
   "Type": "TrainingConfig",
-  "Version": 3,
+  "Version": 4,
   "TrainingOption": {
-    "Version": 0,
+    "Version": 2,
+    "Subsampling": false,
     "Type": "ClassificationTrainingOption",
     "TrainingTime": 30,
     "LabelColumn": "Machine failure",

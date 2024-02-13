@@ -5,11 +5,11 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredictiveMaintenance", "PredictiveMaintenance\PredictiveMaintenance.csproj", "{3E68FC95-EA63-42EB-A232-6B25114AE92D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredictiveMaintenanceMauiApp", "PredictiveMaintenanceMauiApp\PredictiveMaintenanceMauiApp.csproj", "{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredictiveMaintenanceModel_ConsoleApp1", "PredictiveMaintenanceModel_ConsoleApp1\PredictiveMaintenanceModel_ConsoleApp1.csproj", "{EAC4E128-3465-4EA9-995D-74D83431A8BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{47BC2D43-6205-4E0B-8456-3E6D4079ABE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{47BC2D43-6205-4E0B-8456-3E6D4079ABE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PredMaintMauiApp", "PredMaintMauiApp\PredMaintMauiApp.csproj", "{CBF97F61-DAA3-4137-9917-267EFF9442DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +21,6 @@ Global
 		{3E68FC95-EA63-42EB-A232-6B25114AE92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3E68FC95-EA63-42EB-A232-6B25114AE92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E68FC95-EA63-42EB-A232-6B25114AE92D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7407E7CC-BCB4-4741-A415-FB2991DDAD6A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{EAC4E128-3465-4EA9-995D-74D83431A8BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EAC4E128-3465-4EA9-995D-74D83431A8BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAC4E128-3465-4EA9-995D-74D83431A8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -35,6 +29,12 @@ Global
 		{47BC2D43-6205-4E0B-8456-3E6D4079ABE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47BC2D43-6205-4E0B-8456-3E6D4079ABE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47BC2D43-6205-4E0B-8456-3E6D4079ABE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF97F61-DAA3-4137-9917-267EFF9442DC}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:PredMaintMauiApp.Presentation.ViewModels"
+             x:Class="PredMaintMauiApp.Presentation.Views.PredictView"
+             Title="PredictView">
+
+    <ContentPage.BindingContext>
+        <vm:PredictViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <ScrollView Margin="10">
+            <StackLayout Spacing="10">
+
+                <Label Text="Product ID"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Product_ID}"
+                       Style="{StaticResource predictEntry}"/>
+
+
+                <Label Text="Type"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Type}"
+                       Style="{StaticResource predictEntry}"/>
+
+                <Label Text="Air Temperature"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Air_Temperature}"
+                       Style="{StaticResource predictEntry}"/>
+
+                <Label Text="Process Temperature"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Process_Temperature}"
+                       Style="{StaticResource predictEntry}"/>
+
+                <Label Text="Rotational Speed"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Rotational_Speed}"
+                       Style="{StaticResource predictEntry}"/>
+
+                <Label Text="Torque"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Torque}"
+                       Style="{StaticResource predictEntry}"/>
+
+                <Label Text="Tool Wear"
+                       Style="{StaticResource predictLabel}"/>
+                <Entry Text="{Binding Tool_Wear}"
+                       Style="{StaticResource predictEntry}"/>
+
+
+                <Button Text="Predict"
+                        Style="{StaticResource predictButton}"
+                        Command="{Binding PredictCommand}"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
