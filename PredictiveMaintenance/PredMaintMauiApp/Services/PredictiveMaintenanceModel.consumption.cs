@@ -137,7 +137,7 @@ namespace PredMaintMauiApp.Services
 
         #endregion
 
-        private static string MLNetModelPath = "PredictiveMaintenanceModel.zip";
+        private static string MLNetModelPath = "predictivemaintenance.mlnet";
 
         public static readonly Lazy<PredictionEngine<ModelInput, ModelOutput>> PredictEngine = new Lazy<PredictionEngine<ModelInput, ModelOutput>>(() => CreatePredictEngine(), true);
 
