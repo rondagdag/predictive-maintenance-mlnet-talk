@@ -4,7 +4,7 @@
 
 MAUI (Multi-platform App UI) is a UI framework for making Windows, iOS, Android, and macOS applications with one project and one codebase. Attend this session and learn how to build and train a custom machine-learning model using ML.NET Model Builder then we will demonstrate how to integrate it into MAUI app
 
-## Demo: WinML and AutoML
+## Demo: ModelBuilder and AutoML
 In this example you find a .NET MAUI application that can be used for predictive maintenance.
 
 - Predictive Maintenance
