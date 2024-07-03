@@ -2,7 +2,7 @@
 
 # Predictive Maintenance - ML.NET and MAUI
 
-MAUI (Multi-platform App UI) is a UI framework for making Windows, iOS, Android, and macOS applications with one project and one codebase. Attend this session and learn how to build and train a custom machine-learning model using ML.NET Model Builder then we will demonstrate how to integrate it into MAUI app
+Predicting the future is not easy! Forecasting peak operating conditions and avoiding unexpected equipment breakdown is possible, that’s the goal of Predictive Maintenance. Attend this session and learn how to train a machine learning model in Visual Studio with ML.NET Model Builder, and build an app that uses the model. Fair warning - I cannot predict how live demos would go. I will do my best.
 
 ## Demo: ModelBuilder and AutoML
 In this example you find a .NET MAUI application that can be used for predictive maintenance.
