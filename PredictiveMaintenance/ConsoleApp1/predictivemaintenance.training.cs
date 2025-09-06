@@ -5,11 +5,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.ML.Data;
-using Microsoft.ML.Trainers.FastTree;
-using Microsoft.ML.Trainers;
-using Microsoft.ML.Transforms;
 using Microsoft.ML;
+using Microsoft.ML.Data;
+using Microsoft.ML.Trainers;
+using Microsoft.ML.Trainers.LightGbm;
+using Microsoft.ML.Transforms;
 
 namespace ConsoleApp1
 {
@@ -96,7 +96,7 @@ namespace ConsoleApp1
                                     .Append(mlContext.Transforms.Text.FeaturizeText(inputColumnName:@"Product ID",outputColumnName:@"Product ID"))      
                                     .Append(mlContext.Transforms.Concatenate(@"Features", new []{@"Type",@"UDI",@"Air temperature",@"Process temperature",@"Rotational speed",@"Torque",@"Tool wear",@"Product ID"}))      
                                     .Append(mlContext.Transforms.Conversion.MapValueToKey(outputColumnName:@"Machine failure",inputColumnName:@"Machine failure",addKeyValueAnnotationsAsText:false))      
-                                    .Append(mlContext.MulticlassClassification.Trainers.OneVersusAll(binaryEstimator:mlContext.BinaryClassification.Trainers.FastForest(new FastForestBinaryTrainer.Options(){NumberOfTrees=4,NumberOfLeaves=6,FeatureFraction=0.9581667F,LabelColumnName=@"Machine failure",FeatureColumnName=@"Features"}),labelColumnName:@"Machine failure"))      
+                                    .Append(mlContext.MulticlassClassification.Trainers.LightGbm(new LightGbmMulticlassTrainer.Options(){NumberOfLeaves=4,NumberOfIterations=701,MinimumExampleCountPerLeaf=21,LearningRate=0.8507991515850626,LabelColumnName=@"Machine failure",FeatureColumnName=@"Features",Booster=new GradientBooster.Options(){SubsampleFraction=0.6332258550736567,FeatureFraction=0.99999999,L1Regularization=3.807328123559288E-10,L2Regularization=0.9999997766729865},MaximumBinCountPerFeature=183}))      
                                     .Append(mlContext.Transforms.Conversion.MapKeyToValue(outputColumnName:@"PredictedLabel",inputColumnName:@"PredictedLabel"));
 
             return pipeline;
